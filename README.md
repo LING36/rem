@@ -21,7 +21,8 @@ rem是相对于根元素html字体大小来计算的，即( 1rem = html字体大
 font函数，rem解决自适应问题   100px/100=1rem
 
 
-`function font(designWidth, maxWidth) {
+```javascript
+function font(designWidth, maxWidth) {
 	var doc = document, //Document 对象 -浏览器的 HTML 文档
 		win = window, //Window 对象表示浏览器中打开的窗口
 		docEl = doc.documentElement, //documentElement 是整个节点树的根节点root，即<html> 标签
@@ -66,7 +67,8 @@ font函数，rem解决自适应问题   100px/100=1rem
 			doc.body.style.fontSize = "16px";
 		}, false);
 	}
-};`
+};
+```
 
 
 五、给大家介绍下如何使用上面这段js和这段代码的意义。
