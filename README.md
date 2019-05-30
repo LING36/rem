@@ -18,7 +18,7 @@ rem是相对于根元素html字体大小来计算的，即( 1rem = html字体大
 四、你可能会疑惑，但只要你看了这段JS后你会明白的，看不懂的小伙伴们，看了第五点的介绍你就会明白了。
 ------
 
-//font函数，rem解决自适应问题   100px/100=1rem
+font函数，rem解决自适应问题   100px/100=1rem
 
 
 function font(designWidth, maxWidth) {
