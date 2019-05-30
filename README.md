@@ -1,14 +1,18 @@
 使用rem 解决自适应问题
 ====
-###一、兼容性。
+一、兼容性。
+----
 目前，IE9+，Firefox、Chrome、Safari、Opera 的主流版本都支持了rem（大胆用吧，目前几乎所有手机浏览器都支持rem）
-###二、什么是rem。
+二、什么是rem。
+----
 rem是相对于根元素html字体大小来计算的，即( 1rem = html字体大小 )
-###三、使用rem布局有什么优点。
+三、使用rem布局有什么优点。
+---
 他的强大可以让你不在考虑不同尺寸屏幕的手机，和制作PC端一样的写法，只需要设置好参数，就可以为所欲为了。
-###四、你可能会疑惑，但只要你看了这段JS后你会明白的，看不懂的小伙伴们，看了第五点的介绍你就会明白了。
-、、、
+四、你可能会疑惑，但只要你看了这段JS后你会明白的，看不懂的小伙伴们，看了第五点的介绍你就会明白了。
+------
 //font函数，rem解决自适应问题   100px/100=1rem
+、、、
 function font(designWidth, maxWidth) {
 	var doc = document,//Document 对象 -浏览器的 HTML 文档
 		win = window,//Window 对象表示浏览器中打开的窗口
@@ -57,7 +61,8 @@ function font(designWidth, maxWidth) {
 };
 、、、
 
-###五、给大家介绍下如何使用上面这段js和这段代码的意义。
+五、给大家介绍下如何使用上面这段js和这段代码的意义。
+----
 1）用法很简单，只需要在html文件head最上面加入视口代码
 
 `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
@@ -76,9 +81,10 @@ function font(designWidth, maxWidth) {
 
 7)引用了这一段js的脚本文件script标签 记得加上   async="async"  属性  不然会导致进入页面时，页面出现短时间错乱问题
 
-###六、在用rem的时候可能会遇到点小坑，下面小编给大家列出来几个经典的。
+六、在用rem的时候可能会遇到点小坑，下面小编给大家列出来几个经典的。
+----
 1)border:0.01rem solid #ccc;  边框的0.01rem在手机上会看不见，所以边框的0.01rem建议使用1px替代。
 
 2)background-size使用rem无效，建议：修改背景图大小不要卡死，使用雪碧图的就会遇到这种问题了，建议使用直接的图片比较方便，用定位的方式或者使用百分比去控制，比如background-size: 100% auto;等
-\<br>  
+\<br>  \<br> 
 原文链接  https://blog.csdn.net/likeYou1207/article/details/80772466
